@@ -155,11 +155,16 @@ program
         outFiles := new Set<string>()
 
         buildOneFile := async (file: string) => 
-            outFile := await buildFile file, opts.tsx
-            outFiles.add outFile
-            spinner.succeed """
-                #{c.cyan file} -> #{c.green outFile}
-            """
+            try
+                outFile := await buildFile file, opts.tsx
+                outFiles.add outFile
+                spinner.succeed """
+                    #{c.cyan file} -> #{c.green outFile}
+                """
+            catch
+                spinner.fail """
+                    #{c.cyan file}
+                """
 
         watcher := chokidar.watch [...files, cwd], ignored: [/node_modules/gi, /dist/gi]
         watcher.on "add", async (fileAbsolute) => 
