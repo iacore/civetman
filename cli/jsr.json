@@ -1,0 +1,8 @@
+{
+  "name": "@iacore/civetman",
+  "version": "0.0.6",
+  "exports": "./index.ts",
+  "publish": {
+    "include": ["index.ts", "src"]
+  }
+}

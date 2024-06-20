@@ -1,0 +1,2 @@
+#!/usr/bin/fish
+civet -c src/main.civet -o .ts
