@@ -15,7 +15,9 @@ Civet not working? Bad integration with pure TypeScript files? No problem!
 
 ## Usage
 
-First install npm package `civetman` (e.g. `pnpm add civetman`). Then, add `civetman dev` to your `dev` or `start` script in `package.json`, add `civetman build` to your build script. Now you can use `.civet` files. All the imports don't need the suffix `.civet` anymore, meaning that `.civet` files are treated the same as TypeScript files.
+First, install the `civetman` command with `pnpm -g i github:iacore/civetman`.
+
+Then, add `civetman dev` to your `dev` or `start` script in `package.json`, add `civetman build` to your build script. Now you can use `.civet` files. All the imports don't need the suffix `.civet` anymore, meaning that `.civet` files are treated the same as TypeScript files.
 
 ## How it works
 
