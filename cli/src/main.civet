@@ -161,7 +161,8 @@ program
                 spinner.succeed """
                     #{c.cyan file} -> #{c.green outFile}
                 """
-            catch
+            catch e
+            	console.error(e)
                 spinner.fail """
                     #{c.cyan file}
                 """
