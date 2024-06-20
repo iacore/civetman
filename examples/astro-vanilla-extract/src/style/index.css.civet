@@ -1,5 +1,0 @@
-{ style } from '@vanilla-extract/css'
-
-export main := style 
-    backgroundColor: "blue"
-    color: "red"

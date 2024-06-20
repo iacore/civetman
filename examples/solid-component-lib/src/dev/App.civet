@@ -1,2 +1,0 @@
-{ Counter } from "../components/Counter"
-export App := => <Counter />

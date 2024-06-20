@@ -1,2 +1,0 @@
-{ App } from "../dev/App"
-render => <App />, (document.getElementById "root") as unknown as HTMLDivElement

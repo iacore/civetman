@@ -56,3 +56,4 @@ Commands:
     dev               Start building Civet files in watch mode
     help [command]    display help for command
 ```
+
