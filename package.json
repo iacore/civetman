@@ -9,10 +9,10 @@
 		"civetman": "./dist/index.js"
 	},
 	"scripts": {
-		"abuild": "vite build",
+		"_build": "vite build",
 		"format": "prettier --write . --plugin-search-dir .",
 		"dev": "vite build --watch",
-		"prepublish": "pnpm build"
+		"_prepublish": "pnpm build"
 	},
 	"dependencies": {
 		"@danielx/civet": "^0.5.86",
